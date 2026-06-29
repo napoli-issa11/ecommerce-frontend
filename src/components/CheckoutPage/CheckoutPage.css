@@ -3,7 +3,7 @@
   padding-left: 30px;
   padding-right: 30px;
 
-  margin-top: 140px;
+  margin-top: 90px;
   margin-bottom: 100px;
 
   /* margin-left: auto;
@@ -87,8 +87,11 @@
 
 @media (max-width: 1000px) {
   .checkout-page .cart-item-details-grid {
-    grid-template-columns: 100px 1fr;
-    row-gap: 30px;
+    /* grid-template-columns: 100px 1fr;
+    row-gap: 30px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
   }
 }
 

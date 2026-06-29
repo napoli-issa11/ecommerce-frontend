@@ -24,11 +24,13 @@
 
 .checkout-header .checkout-header-left-section {
   width: 200px;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
 }
 
 .checkout-header .logo {
-  height: 26px;
-  margin-top: 0px;
+  height: 20px;
 }
 
 .checkout-header .mobile-logo {
@@ -39,7 +41,7 @@
    website look good on any screen size). This @media
    means when the screen width is 575px or less, different
    styles (inside the {...}) will be applied. */
-@media (max-width: 575px) {
+@media (max-width: 750px) {
   .checkout-header .checkout-header-left-section {
     width: auto;
   }
@@ -55,15 +57,15 @@
 }
 
 .checkout-header .checkout-header-middle-section {
-  flex: 1;
+  flex: 0 0 auto;
   flex-shrink: 0;
   text-align: center;
 
   font-size: 22px;
   font-weight: 500;
 
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .checkout-header .return-to-home-link {
@@ -76,8 +78,12 @@
 @media (max-width: 1000px) {
   .checkout-header .checkout-header-middle-section {
     font-size: 20px;
-    margin-right: 60px;
+    margin-right: -10px;
   }
+
+  /* .checkout-header .logo {
+    display: none;
+  } */
 
   .checkout-header .return-to-home-link {
     font-size: 20px;
@@ -95,7 +101,8 @@
   width: 200px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .checkout-header .checkout-header-right-section img {
