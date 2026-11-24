@@ -1,7 +1,7 @@
 import "./TrackingPage.css";
 import api from "../../axiosInstance";
 import { Header } from "../Header/Header";
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router";
 import { useState, useEffect } from "react";
 import dayjs from "dayjs";
 export function TrackingPage({ cartItems }) {
@@ -35,9 +35,9 @@ export function TrackingPage({ cartItems }) {
 
       <div className="tracking-page">
         <div className="order-tracking">
-          <a className="back-to-orders-link link-primary" href="/orders">
+          <Link className="back-to-orders-link link-primary" to="/orders">
             View all orders
-          </a>
+          </Link>
 
           <div className="delivery-date">
             Arriving on{" "}
